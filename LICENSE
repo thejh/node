@@ -66,3 +66,9 @@ The externally maintained libraries used by Node are:
 
   - tools/cpplint.py is copyright Google Inc. and released under a
     BSD license.
+
+  - js_src/narcissus_packed.js and lib/narcissus_packed.js come from
+    the Narcissus JavaScript engine and are usable under the terms of
+    the GPLv2.0, the MPLv1.1 or the LGPLv2.1. They are partly copyright
+    Brendan Eich <brendan@mozilla.org>, for the full contributer list and
+    details, look into the files.

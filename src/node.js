@@ -66,6 +66,7 @@
     global.global = global;
     global.GLOBAL = global;
     global.root = global;
+    NativeModule.require('eventsource');
     global.Buffer = NativeModule.require('buffer').Buffer;
   };
 
