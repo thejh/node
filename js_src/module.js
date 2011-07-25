@@ -339,10 +339,11 @@ Module.prototype.load = function(filename) {
 
 // Returns exception if any
 Module.prototype._compile = function(content, filename) {
-  content = patcher.patch(content, filename);
   var self = this;
   // remove shebang
   content = content.replace(/^\#\!.*/, '');
+
+  content = patcher.patch(content, filename);
 
   function require(path) {
     return Module._load(path, self);
