@@ -104,6 +104,7 @@
       if (NativeModule.require('tty').isatty(0)) {
         // REPL
         var repl = Module.requireRepl().start('> ', null, null, true);
+        process.repl = repl;
 
       } else {
         // Read all of stdin - execute it.
